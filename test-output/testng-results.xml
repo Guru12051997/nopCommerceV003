@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="4" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-10-17T06:46:27Z" name="Default suite" finished-at="2022-10-17T06:47:35Z" duration-ms="68143">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.RunnerClass@49c386c8]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2022-10-17T06:46:27Z" name="Default test" finished-at="2022-10-17T06:47:35Z" duration-ms="68143">
+      <class name="TestRunner.RunnerClass">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:TestRunner.RunnerClass@49c386c8]" started-at="2022-10-17T06:46:27Z" name="setUpClass" finished-at="2022-10-17T06:46:29Z" duration-ms="2113" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.RunnerClass@49c386c8]" started-at="2022-10-17T06:46:29Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-17T06:47:04Z" duration-ms="34892" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Search Customer by Name"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Customers]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [false] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [false] but found [true]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:568)
+at org.testng.Assert.assertEquals(Assert.java:578)
+at stepDefinition.Steps.user_should_found_name_in_the_search_table(Steps.java:254)
+at ✽.User Should found Name in the Search table(file:///D:/Drishyam%20(2015)%20%5BBluRay%5D%20%5B1080p%5D%20%5BYTS.AM%5D/new%20eclipse/nopCommerceV003_Cucumber/./Features/Customers.feature:36)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.RunnerClass@49c386c8]" started-at="2022-10-17T06:46:29Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-17T06:47:26Z" duration-ms="56472" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Add new Customer"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Customers]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.RunnerClass@49c386c8]" started-at="2022-10-17T06:46:30Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-17T06:47:00Z" duration-ms="30157" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["SuccessFul Login with Valid  Credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Login nopCommerce Application]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.RunnerClass@49c386c8]" started-at="2022-10-17T06:46:30Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-17T06:47:05Z" duration-ms="35912" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Search Customer by EmailId"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Customers]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [false] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [false] but found [true]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:568)
+at org.testng.Assert.assertEquals(Assert.java:578)
+at stepDefinition.Steps.user_should_found_email_in_the_search_table(Steps.java:234)
+at ✽.User Should found Email in the Search table(file:///D:/Drishyam%20(2015)%20%5BBluRay%5D%20%5B1080p%5D%20%5BYTS.AM%5D/new%20eclipse/nopCommerceV003_Cucumber/./Features/Customers.feature:26)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.RunnerClass@49c386c8]" started-at="2022-10-17T06:46:30Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-17T06:46:58Z" duration-ms="28502" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Data Driven Login"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Login nopCommerce Application]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.RunnerClass@49c386c8]" started-at="2022-10-17T06:46:30Z" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-17T06:46:59Z" duration-ms="29434" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Data Driven Login"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Login nopCommerce Application]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:TestRunner.RunnerClass@49c386c8]" started-at="2022-10-17T06:47:26Z" name="tearDownClass" finished-at="2022-10-17T06:47:35Z" duration-ms="9478" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- TestRunner.RunnerClass -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
